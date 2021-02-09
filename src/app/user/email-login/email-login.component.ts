@@ -15,6 +15,7 @@ export class EmailLoginComponent implements OnInit {
   type: FormTypeModel = "signup"
 
   serverMessage: string
+  
 
   constructor(private afAuth: AngularFireAuth, private fb:FormBuilder) { }
 
@@ -40,6 +41,18 @@ export class EmailLoginComponent implements OnInit {
 
   get isReset() {
     return this.type === 'reset'
+  }
+
+  get email() {
+    return this.form.get('email')
+  }
+
+  get password() {
+    return this.form.get('password')
+  }
+
+  get passwordConfirmation() {
+    return this.form.get('passwordConfirmation')
   }
 
 }
