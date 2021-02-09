@@ -20,7 +20,7 @@ $bankan-warn: mat-palette($mat-red);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$bankan-theme: mat-light-theme((
+$bankan-theme: mat-dark-theme((
   color: (
     primary: $bankan-primary,
     accent: $bankan-accent,

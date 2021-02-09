@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "bankan-5ee79": {
+      "hosting": {
+        "bankan": [
+          "bankan-5ee79"
+        ]
+      }
+    }
+  }
+}
