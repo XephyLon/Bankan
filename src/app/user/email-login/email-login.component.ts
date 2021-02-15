@@ -55,4 +55,16 @@ export class EmailLoginComponent implements OnInit {
     return this.form.get('passwordConfirmation')
   }
 
+  get passwordDoesMatch() {
+    if (this.type !== 'signup') {
+      return true
+    } else {
+      return this.password.value === this.passwordConfirmation.value
+    }
+  }
+
+  async onSubmit() {
+    
+  }
+
 }

@@ -1,1 +1,7 @@
-<p>email-login works!</p>
+<mat-card>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <mat-form-field [color]="email.valid && 'accent'">
+            <input matInput formControlName="email" >
+        </mat-form-field>
+    </form>
+</mat-card>
